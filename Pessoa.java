@@ -11,6 +11,14 @@ public class Pessoa {
         this.nome = nome;
     }
 
+    void exibirInfo () {
+        System.out.println("Nome: " + nome);
+        System.out.println("cpf: " + cpf);
+        System.out.println("idade: " + idade);
+        System.out.println("data de nascimento: " + data_nasc);
+
+    }
+
 
 }
 
