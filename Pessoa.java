@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Pessoa {
     private String nome;
     private String cpf;
@@ -19,6 +21,35 @@ public class Pessoa {
 
     }
 
+    public Pessoa () {}
+
+    public void catchInfo () {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        this.nome = sc.nextLine();
+
+        System.out.println("Digite seu cpf: ");
+        this.cpf = sc.nextLine();
+
+        System.out.println("Digite seu idade: ");
+        this.idade = sc.nextInt();
+
+        System.out.println("Digite sua data de nascimento: ");
+        sc.nextLine();
+        this.data_nasc = sc.nextLine();
+
+    }
+
+
+
+
+    public String toString (){
+        return   '\'' +
+                "Nome='" + nome + '\'' +
+                ", CPF=" + cpf +
+                ", Idade='" + idade + '\'' +
+                "Data de Nascimento= " + data_nasc + '\'';
+    }
 
 }
 
