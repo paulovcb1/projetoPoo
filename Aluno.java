@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Aluno extends Pessoa {
@@ -70,31 +71,31 @@ public class Aluno extends Pessoa {
 
     @Override
     public void catchInfo () {
-        super.catchInfo();
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite seu matricula: ");
-        this.matricula = sc.nextInt();
 
-        System.out.println("Digite seu serie: ");
-        this.serie = sc.nextInt();
+        this.matricula = Integer.parseInt(JOptionPane.showInputDialog(null, "insira sua matricula"));
 
-        System.out.println("Digite seu turma: ");
-        sc.nextLine();
-        this.turma = sc.nextLine();
+        this.serie = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira sua serie"));
 
-        System.out.println("Digite sua nota ");
-        this.notas = sc.nextDouble();
 
-        sc.nextLine();
+        this.turma = JOptionPane.showInputDialog(null, "Insira sua turma");
+
+
+        this.notas = Double.parseDouble(JOptionPane.showInputDialog(null, "Insira sua nota"));
+
+
+        this.turno = JOptionPane.showInputDialog("turno");
+
+
     }
 
     @Override
     public String toString() {
-        return  "Alunos" + '\'' + super.toString() +
-                "serie='" + serie + '\'' +
-                ", turma=" + turma +
-                ", matricula='" + matricula + '\'' +
-                "turno= " + turno + '\'';
+        return   '\'' + super.toString() + "\n" +
+                "Série: " + serie + '\'' + "\n" +
+                "Turma: " + turma + "\n" +
+                "Matrícula: " + matricula + '\'' + "\n" +
+                "Turno: " + turno + '\'';
+
     }
 
 }

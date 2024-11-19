@@ -25,6 +25,7 @@ public class Pessoa {
 
     public void catchInfo () {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Digite seu nome: ");
         this.nome = sc.nextLine();
 
@@ -45,10 +46,11 @@ public class Pessoa {
 
     public String toString (){
         return   '\'' +
-                "Nome='" + nome + '\'' +
-                ", CPF=" + cpf +
-                ", Idade='" + idade + '\'' +
-                "Data de Nascimento= " + data_nasc + '\'';
+                "Nome: " + nome + '\'' + "\n" +
+                "CPF: " + cpf + "\n" +
+                "Idade: '" + idade + '\'' + "\n" +
+                "Data de Nascimento: " + data_nasc + '\'';
+
     }
 
 }
