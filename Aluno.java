@@ -1,3 +1,4 @@
+
 public class Aluno extends Pessoa {
     int matricula;
     int  serie;
@@ -25,12 +26,13 @@ public class Aluno extends Pessoa {
         this.notas = notas;
     }
 
-    void exibirInfo() {
-        System.out.println("matricula: " + matricula);
-        System.out.println(serie);
-        System.out.println(turma);
-        System.out.println(turno);
-        System.out.println(notas);
+    protected void exibirInfo() {
+        super.exibirInfo();
+        System.out.println("Matricula: " + matricula);
+        System.out.println("Serie: " + serie);
+        System.out.println("Turma: " + turma);
+        System.out.println("Turno: " + turno);
+        System.out.println("Notas: " + notas);
     }
 
 }
