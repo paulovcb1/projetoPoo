@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.util.Scanner;
 
 public class Aluno extends Pessoa {
     private int matricula;
@@ -90,7 +89,7 @@ public class Aluno extends Pessoa {
 
     @Override
     public String toString() {
-        return   '\'' + super.toString() + "\n" +
+        return  "\n" + '\'' + super.toString() + "\n" +
                 "Série: " + serie + '\'' + "\n" +
                 "Turma: " + turma + "\n" +
                 "Matrícula: " + matricula + '\'' + "\n" +
@@ -99,3 +98,5 @@ public class Aluno extends Pessoa {
     }
 
 }
+
+

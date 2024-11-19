@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Funcionario extends Pessoa{
     private String cargo;
     private double salario;
@@ -10,7 +12,17 @@ public class Funcionario extends Pessoa{
         this.salario = salario;
     }
 
+    public Funcionario () {
 
+    }
+    @Override
+    public void catchInfo () {
+        super.catchInfo();
+
+        this.cargo = JOptionPane.showInputDialog(null, "insira seu cargo");
+        this.salario = Double.parseDouble(JOptionPane.showInputDialog(null, "insira seu salario"));
+
+    }
     public String getCargo() {
         return cargo;
     }
@@ -27,10 +39,16 @@ public class Funcionario extends Pessoa{
         this.salario = salario;
     }
 
-    protected void exibirInfo(){
-        super.exibirInfo();
-        System.out.println("Cargo: " + cargo);
-        System.out.println("Salário: " + salario);
-    }
+
+
+   @Override
+
+    public String toString () {
+        return "\n" + '\'' + super.toString() + "\n" +
+                "Cargo: " + cargo + '\'' + "\n" +
+                "salario: " + salario + "\n";
+
+   }
 
 }
+
