@@ -71,7 +71,7 @@ public class Aluno extends Pessoa {
 
     @Override
     public void catchInfo () {
-
+        super.catchInfo();
         this.matricula = Integer.parseInt(JOptionPane.showInputDialog(null, "insira sua matricula"));
 
         this.serie = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira sua serie"));

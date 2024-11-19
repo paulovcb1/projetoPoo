@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Pessoa {
@@ -24,20 +25,14 @@ public class Pessoa {
     public Pessoa () {}
 
     public void catchInfo () {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite seu nome: ");
-        this.nome = sc.nextLine();
+        this.nome = JOptionPane.showInputDialog(null, "insira sua Nome");
 
-        System.out.println("Digite seu cpf: ");
-        this.cpf = sc.nextLine();
+        this.cpf = JOptionPane.showInputDialog(null, "insira sua cpf");
 
-        System.out.println("Digite seu idade: ");
-        this.idade = sc.nextInt();
+        this.idade = Integer.parseInt(JOptionPane.showInputDialog(null, "insira sua idade"));
 
-        System.out.println("Digite sua data de nascimento: ");
-        sc.nextLine();
-        this.data_nasc = sc.nextLine();
+        this.data_nasc = JOptionPane.showInputDialog(null, "insira sua data de nascimento");
 
     }
 
