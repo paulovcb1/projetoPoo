@@ -57,7 +57,6 @@ public class Aluno extends Pessoa {
                  String turno,
                  float notas) {
 
-
         super(data_nasc, idade, cpf, nome);
         this.matricula = matricula;
         this.serie = serie;
@@ -71,7 +70,6 @@ public class Aluno extends Pessoa {
     @Override
     public void catchInfo () {
         super.catchInfo();
-        this.matricula = Integer.parseInt(JOptionPane.showInputDialog(null, "insira sua matricula"));
 
         this.serie = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira sua serie"));
 
@@ -83,8 +81,6 @@ public class Aluno extends Pessoa {
 
 
         this.turno = JOptionPane.showInputDialog("turno");
-
-
     }
 
     @Override
@@ -96,7 +92,4 @@ public class Aluno extends Pessoa {
                 "Turno: " + turno + '\'';
 
     }
-
 }
-
-
