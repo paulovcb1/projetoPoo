@@ -8,7 +8,7 @@ public class MenuGUI extends JFrame {
         ArrayList <Funcionario> listaFuncionario = new ArrayList<>();
         ArrayList <Aluno> listaAluno = new ArrayList<>();
 
-        // Configuração da janela principal
+
         setTitle("Menu de Navegação");
         setSize(400, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
