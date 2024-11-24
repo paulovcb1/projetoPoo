@@ -15,8 +15,6 @@ public class MenuGUI extends JFrame {
         setLayout(null);
 
 
-
-        // Botão para Cadastrar Aluno
         JButton btnCadastrarAluno = new JButton("Cadastrar Aluno");
         btnCadastrarAluno.setBounds(100, 50, 200, 30);
         btnCadastrarAluno.addActionListener(new ActionListener() {
@@ -30,7 +28,7 @@ public class MenuGUI extends JFrame {
         });
         add(btnCadastrarAluno);
 
-        //Funcionario
+
         JButton btnCadastrarFuncionario = new JButton("Cadastrar Funcionario");
         btnCadastrarFuncionario.setBounds(100, 100, 200, 30);
         btnCadastrarFuncionario.addActionListener(new ActionListener() {
@@ -79,7 +77,7 @@ public class MenuGUI extends JFrame {
         });
         add(btnVerAlunos);
 
-        // Botão para Sair
+
         JButton btnSair = new JButton("Sair");
         btnSair.setBounds(100, 250, 200, 30);
         btnSair.addActionListener(new ActionListener() {
