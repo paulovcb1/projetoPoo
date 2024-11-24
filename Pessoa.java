@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.util.Scanner;
 
 public class Pessoa {
     private String nome;
@@ -14,6 +13,38 @@ public class Pessoa {
         this.nome = nome;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getData_nasc() {
+        return data_nasc;
+    }
+
+    public void setData_nasc(String data_nasc) {
+        this.data_nasc = data_nasc;
+    }
+
     void exibirInfo () {
         System.out.println("Nome: " + nome);
         System.out.println("cpf: " + cpf);
@@ -26,18 +57,15 @@ public class Pessoa {
 
     public void catchInfo () {
 
-        this.nome = JOptionPane.showInputDialog(null, "insira sua Nome");
+        this.nome = JOptionPane.showInputDialog(null, "Insira seu Nome");
 
-        this.cpf = JOptionPane.showInputDialog(null, "insira sua cpf");
+        this.cpf = JOptionPane.showInputDialog(null, "Insira seu cpf");
 
-        this.idade = Integer.parseInt(JOptionPane.showInputDialog(null, "insira sua idade"));
+        this.idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira sua idade"));
 
-        this.data_nasc = JOptionPane.showInputDialog(null, "insira sua data de nascimento");
+        this.data_nasc = JOptionPane.showInputDialog(null, "Insira sua data de nascimento");
 
     }
-
-
-
 
     public String toString (){
         return   '\'' +
@@ -47,7 +75,4 @@ public class Pessoa {
                 "Data de Nascimento: " + data_nasc + '\'';
 
     }
-
 }
-
-
